@@ -1,60 +1,58 @@
 var map = {
-    cols: 12,
-    rows: 12,
-    tsize: 64,
+    cols: 16,
+    rows: 16,
+    txsize: 64,
+    tysize: 64,
     layers: [[
-        3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
-        3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3,
-        3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3,
-        3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3,
-        3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3,
-        3, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3,
-        3, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 3,
-        3, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 3,
-        3, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 3,
-        3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 3,
-        3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 3,
-        3, 3, 3, 1, 1, 2, 3, 3, 3, 3, 3, 3
-    ], [
-        4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 5, 0, 0, 0, 0, 0, 5, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4,
-        4, 4, 4, 0, 5, 4, 4, 4, 4, 4, 4, 4,
-        4, 4, 4, 0, 0, 3, 3, 3, 3, 3, 3, 3
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
     ]],
     getTile: function (layer, col, row) {
-        return this.layers[layer][row * map.cols + col];
+        var tile = this.layers[layer][row * map.cols + col];
+        if (tile === undefined) {
+            tile = [1, 1];
+        }
+        return tile;
     },
     isSolidTileAtXY: function (x, y) {
-        var col = Math.floor(x / this.tsize);
-        var row = Math.floor(y / this.tsize);
+        var col = Math.floor(x / this.txsize);
+        var row = Math.floor(y / this.tysize);
 
         // tiles 3 and 5 are solid -- the rest are walkable
         // loop through all layers and return TRUE if any tile is solid
-        return this.layers.reduce(function (res, layer, index) {
-            var tile = this.getTile(index, col, row);
-            var isSolid = tile === 3 || tile === 5;
-            return res || isSolid;
-        }.bind(this), false);
+        return false;
+// not worrying about solidity for now
+//        return this.layers.reduce(function (res, layer, index) {
+//            var tile = this.getTile(index, col, row);
+//            var isSolid = tile === 3 || tile === 5;
+//            return res || isSolid;
+//        }.bind(this), false);
     },
     getCol: function (x) {
-        return Math.floor(x / this.tsize);
+        return Math.floor(x / this.txsize);
     },
     getRow: function (y) {
-        return Math.floor(y / this.tsize);
+        return Math.floor(y / this.tysize);
     },
     getX: function (col) {
-        return col * this.tsize;
+        return col * this.txsize;
     },
     getY: function (row) {
-        return row * this.tsize;
+        return row * this.tysize;
     }
 };
 
@@ -63,8 +61,8 @@ function Camera(map, width, height) {
     this.y = 0;
     this.width = width;
     this.height = height;
-    this.maxX = map.cols * map.tsize - width;
-    this.maxY = map.rows * map.tsize - height;
+    this.maxX = map.cols * map.txsize - width;
+    this.maxY = map.rows * map.tysize - height;
 }
 
 Camera.prototype.follow = function (sprite) {
@@ -105,8 +103,8 @@ function Hero(map, x, y) {
     this.map = map;
     this.x = x;
     this.y = y;
-    this.width = map.tsize;
-    this.height = map.tsize;
+    this.width = map.txsize;
+    this.height = map.tysize;
 
     this.image = Loader.getImage('hero');
 }
@@ -122,8 +120,8 @@ Hero.prototype.move = function (delta, dirx, diry) {
     this._collide(dirx, diry);
 
     // clamp values
-    var maxX = this.map.cols * this.map.tsize;
-    var maxY = this.map.rows * this.map.tsize;
+    var maxX = this.map.cols * this.map.txsize;
+    var maxY = this.map.rows * this.map.tysize;
     this.x = Math.max(0, Math.min(this.x, maxX));
     this.y = Math.max(0, Math.min(this.y, maxY));
 };
@@ -194,29 +192,29 @@ Game.update = function (delta) {
 };
 
 Game._drawLayer = function (layer) {
-    var startCol = Math.floor(this.camera.x / map.tsize);
-    var endCol = startCol + (this.camera.width / map.tsize);
-    var startRow = Math.floor(this.camera.y / map.tsize);
-    var endRow = startRow + (this.camera.height / map.tsize);
-    var offsetX = -this.camera.x + startCol * map.tsize;
-    var offsetY = -this.camera.y + startRow * map.tsize;
+    var startCol = Math.floor(this.camera.x / map.txsize);
+    var endCol = startCol + (this.camera.width / map.txsize);
+    var startRow = Math.floor(this.camera.y / map.tysize);
+    var endRow = startRow + (this.camera.height / map.tysize);
+    var offsetX = -this.camera.x + startCol * map.txsize;
+    var offsetY = -this.camera.y + startRow * map.tysize;
 
     for (var c = startCol; c <= endCol; c++) {
         for (var r = startRow; r <= endRow; r++) {
             var tile = map.getTile(layer, c, r);
-            var x = (c - startCol) * map.tsize + offsetX;
-            var y = (r - startRow) * map.tsize + offsetY;
+            var x = (c - startCol) * map.txsize + offsetX;
+            var y = (r - startRow) * map.tysize + offsetY;
             if (tile !== 0) { // 0 => empty tile
                 this.ctx.drawImage(
                     this.tileAtlas, // image
-                    (tile - 1) * map.tsize, // source x
-                    0, // source y
-                    map.tsize, // source width
-                    map.tsize, // source height
+                    (tile[0] - 1) * map.txsize, // source x
+                    (tile[1] - 1) * map.tysize, // source y
+                    map.txsize, // source width
+                    map.tysize, // source height
                     Math.round(x),  // target x
                     Math.round(y), // target y
-                    map.tsize, // target width
-                    map.tsize // target height
+                    map.txsize, // target width
+                    map.tysize // target height
                 );
             }
         }
@@ -224,19 +222,19 @@ Game._drawLayer = function (layer) {
 };
 
 Game._drawGrid = function () {
-        var width = map.cols * map.tsize;
-    var height = map.rows * map.tsize;
+    var width = map.cols * map.txsize;
+    var height = map.rows * map.tysize;
     var x, y;
     for (var r = 0; r < map.rows; r++) {
         x = - this.camera.x;
-        y = r * map.tsize - this.camera.y;
+        y = r * map.tysize - this.camera.y;
         this.ctx.beginPath();
         this.ctx.moveTo(x, y);
         this.ctx.lineTo(width, y);
         this.ctx.stroke();
     }
     for (var c = 0; c < map.cols; c++) {
-        x = c * map.tsize - this.camera.x;
+        x = c * map.txsize - this.camera.x;
         y = - this.camera.y;
         this.ctx.beginPath();
         this.ctx.moveTo(x, y);
@@ -256,7 +254,7 @@ Game.render = function () {
         this.hero.screenY - this.hero.height / 2);
 
     // draw map top layer
-    this._drawLayer(1);
+    // this._drawLayer(1)
 
     this._drawGrid();
 };
